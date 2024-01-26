@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+
+<body>
+    <form method="post">
+        {% csrf_token %}
+        Do you really want to remove this task from your pending list?
+        <input type="submit" value="Delete" class="btn btn-danger">
+    </form>
+</body>
+
+</html>

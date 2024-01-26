@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+
+<body>
+<div class="shadow card">
+    <div class="card-header">
+        <div class="card-title">
+            TASK UPDATE
+        </div>
+        <div class="card-body">
+             <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+      <button type="submit">update</button>
+    </form>
+
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+
+</html>

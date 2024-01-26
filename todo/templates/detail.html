@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task details</title>
+</head>
+{% extends 'base.html' %}
+{% block content %}
+ <div class="shadow card">
+            <div class="card mb-3 shadow">
+                <div class="card-body">
+                    <h5 class="card-title">{{ tasks.Task }}</h5>
+                    <p><b>Priority: {{ tasks.priority }}</b></p>
+                    <p><b>Target on {{ tasks.date }}</b></p>
+
+                    <a class="btn btn-danger" href="{% url 'todoapp:deleted' tasks.id %}">Done</a>
+                    <a class="btn btn-warning" href="{% url 'todoapp:update' tasks.id %}">Update</a>
+                </div>
+            </div>
+
+            </div>
+
+{% endblock %}

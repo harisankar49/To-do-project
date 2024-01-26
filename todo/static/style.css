@@ -1,0 +1,10 @@
+.banner {
+           width:100%; margin:0 auto; /* size of banner, also centers the color background*/
+   		text-align:center; /*centers-text for all child elements!*/
+   	 	padding:0;
+		font-weight:normal;
+		font-size:400%;
+		background:  orange;
+		text-shadow: 0 1px 0 #fff;
+		padding: .5em 0 ;
+        }
